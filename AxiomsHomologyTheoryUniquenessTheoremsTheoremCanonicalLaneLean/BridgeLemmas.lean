@@ -1,0 +1,16 @@
+import canonicalLaneMathlib.AdmissibleClass
+import AxiomsHomologyTheoryUniquenessTheoremsTheoremCanonicalLaneLean.AxiomsPackage
+
+namespace HautevilleHouse
+namespace AxiomsHomologyTheoryUniquenessTheoremsTheoremCanonicalLaneLean
+
+open HautevilleHouse.HautevilleHouse.AxiomsHomologyTheoryUniquenessTheoremsTheoremCanonicalLaneLean
+
+def bridgeClosed (A : AdmissibleClass) : Prop :=
+  EilenbergSteenrodAxiomsClosed A.object
+
+theorem bridge_from_admissible_class (A : AdmissibleClass) : bridgeClosed A :=
+  A.endpointSatisfied
+
+end AxiomsHomologyTheoryUniquenessTheoremsTheoremCanonicalLaneLean
+end HautevilleHouse
